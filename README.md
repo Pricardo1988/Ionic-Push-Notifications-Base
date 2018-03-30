@@ -37,3 +37,45 @@ Run using XCode
 #### Use o token de dispositivo impresso no console para notificações por push usando o código abaixo do servidor
 
 Push Notifications Preview na tela de bloqueio e enquanto estiver usando o aplicativo
+
+
+Código do servidor
+Código do servidor de notificações por push tada+1 Tem código de servidor usado para enviar notificação push para dispositivos iOS e Android.
+
+Estrutura de arquivos do aplicativo
+ionic-push-base/
+|-- src/
+|    |-- app/
+|    |    ├── app.ts
+|    |    └── app.module.ts
+|    |    └── main.ts
+|    |
+|    |-- pages/                          * Contains all of our pages
+│    │    ├── details/                   * Push Details tab page
+│    │    │    ├── detail.html           * DetailsPage template
+│    │    │    └── detail.ts             * DetailsPage code
+│    │    │
+│    │    ├── home/                      * Home page
+│    │    │    ├── home.html             * HomePage template
+│    │    │    └── home.ts               * HomePage code
+│    │    │
+│    │    ├── tabs/                      * Tabs page
+│    │    │    ├── tabs.html             * TabsPage template
+│    │    │    └── tabs.ts               * TabsPage code
+│    │    │
+│    ├── theme/                          * App theme files
+|    |     ├── variables.scss            * App Shared Sass Variables
+|    |
+|    |-- index.html
+|    |-- manifest.json
+|    |-- service-worker.js
+|
+├── .editorconfig                        * Defines coding styles between editors
+├── .gitignore                           * Example git ignore file
+├── LICENSE                              * MIT License
+├── README.md                            * This file
+├── config.xml                           * Cordova configuration file
+├── ionic.config.json                    * Ionic configuration file
+├── package.json                         * Defines our JavaScript dependencies
+├── tsconfig.json                        * Defines the root files and the compiler options
+├── tslint.json                          * Defines the rules for the TypeScript linter   
